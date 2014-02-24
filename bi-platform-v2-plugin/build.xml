@@ -316,7 +316,7 @@ excludes="**/Thumbs.db"
 		Publishes the jar and plugin zip package to the Maven repository
 		====================================================================-->
   <target name="publish-pentaho-nojar"
-	  depends="install-antcontrib,create-pom,ivy.deliver, subfloor-js.js.publish-nojar">
+	  depends="install-antcontrib,create-pom,ivy.deliver, subfloor.publish-nojar">
 	  <ant antfile="common_build.xml" target="publish-pentaho-nojar" />
 
 	  <ivy:makepom ivyfile="package-ivy.xml" pomfile="plugin-pom.xml" />
