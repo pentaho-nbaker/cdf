@@ -15,7 +15,6 @@
 		and works with the common_build.xml file.
 	</description>
 
-	
 	  
  	
 	<!-- Global properties -->
@@ -108,8 +107,7 @@
 
 
 	  
- 
-	  <!--=======================================================================
+ 	  <!--=======================================================================
 			dist
 
 			Creates a distribution of this project's plugin zip
@@ -437,9 +435,8 @@ excludes="**/Thumbs.db"
         <delete file="@{file}" />
       </sequential>
     </for>
-  </target>  
-  
-  
-<target name="publish-nojar" depends="subfloor-js.js.publish-nojar, subfloor-pkg.publish-nojar"/>
+  </target>
+
+  <target name="publish-nojar" depends="subfloor-js.js.publish-nojar, subfloor.publish-nojar"/>
   
 </project>
